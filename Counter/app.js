@@ -30,12 +30,12 @@ reset.addEventListener("click", function () {
 //изменение цвета
 function changeColor(value) {
   if (parseInt(value) === 0) {
-    document.querySelector(".counter").style.color = "black";
+    document.querySelector(".counter").style.color = "#000000";
   }
   if (parseInt(value) > 0) {
-    document.querySelector(".counter").style.color = "#88B04B";
+    document.querySelector(".counter").style.color = "#00887A";
   }
   if (parseInt(value) < 0) {
-    document.querySelector(".counter").style.color = "#FF6F61";
+    document.querySelector(".counter").style.color = "#E85A4F";
   }
 }
