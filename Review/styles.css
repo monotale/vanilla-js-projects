@@ -1,0 +1,83 @@
+body {
+  background-color: #ffffff;
+}
+main {
+  margin: 0 auto;
+  max-width: 600px;
+  max-height: 600px;
+}
+.our-review {
+  text-align: center;
+  margin-bottom: 0;
+  color: #00887a;
+}
+.underscore {
+  text-align: center;
+}
+.review-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin-top: 10px;
+  object-fit: cover;
+}
+
+.profession {
+  margin-top: 0;
+}
+
+.wrapper {
+  min-height: 80px;
+  min-width: 550px;
+  margin-left: 35px;
+}
+
+.review-text {
+  display: inline;
+}
+
+.btn {
+  padding: 8px 14px;
+  font-size: 12px;
+  background-color: #77a6f7;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d3e3fc;
+  border-radius: 18px;
+  color: #ffffff;
+}
+.btn:hover {
+  background-color: #5c82c4;
+  transition: 0.2s;
+}
+.btn:active {
+  background-color: #3a537f;
+}
+.random-btn {
+  padding: 4px 10px;
+  font-size: 14px;
+  background-color: #77a6f7;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d3e3fc;
+  border-radius: 14px;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.random-btn:hover {
+  background-color: #5c82c4;
+  transition: 0.2s;
+}
+.random-btn:active {
+  background-color: #3a537f;
+}
