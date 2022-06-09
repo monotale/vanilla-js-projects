@@ -62,20 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
   updateReview(reviews[currentPosition]);
 });
 
-buttons.forEach((element) => {
-  element.addEventListener("click", function (e) {
-    const classes = e.currentTarget.classList;
-
-    if (classes.contains("button-left")) {
-      if (currentPosition > 0) updateReview(reviews[(currentPosition -= 1)]);
-    }
-    if (classes.contains("button-right")) {
-      if (currentPosition < reviews.length - 1)
-        updateReview(reviews[(currentPosition += 1)]);
-    }
-  });
-});
-
 const updateReview = (target) => {
   fullName.textContent = target.fullName;
   profession.textContent = target.profession;
@@ -88,5 +74,21 @@ const randomReview = () => {
 };
 
 random.addEventListener("click", function () {
-  updateReview(reviews[randomReview()]);
+  let randomNumber = randomReview();
+  updateReview(reviews[randomNumber]);
+  currentPosition = randomNumber;
+});
+
+buttons.forEach((element) => {
+  element.addEventListener("click", function (e) {
+    const classes = e.currentTarget.classList;
+
+    if (classes.contains("button-left")) {
+      if (currentPosition > 0) updateReview(reviews[(currentPosition -= 1)]);
+    }
+    if (classes.contains("button-right")) {
+      if (currentPosition < reviews.length - 1)
+        updateReview(reviews[(currentPosition += 1)]);
+    }
+  });
 });
